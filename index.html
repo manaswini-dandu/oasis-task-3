@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Web App</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        
+        <!-- Logo -->
+        <div class="img-container">
+            <img src="./assets/logo.png"/>
+        </div>
+
+    </header>
+
+    <!-- Main Area -->
+    <main>
+        <div class="input-container">
+            <div id="msg">What do you want to get done today?</div>
+            
+            <form>
+                <label for="task"></label>
+                <input type="text" id="userinput" name="task" placeholder="tasks...">
+                <input type="text" id="namelist" name="namelist" placeholder="name of the list...">
+                <input type="button" value="Add" id="btn" onclick="tasklist()" title="✔️ Adds an item to list">
+                <button onclick="reset()" id="reset" title="🔃 Refreshes the page">Reset</button>
+            </form>
+            <br>
+            <p id="warning"></p>
+            <p id="warning1"></p> 
+        </div>
+
+        <!-- Container -->
+        <div id="containertodo">
+            <div class="todo"></div>
+            <div id="todolistbr" class="todolist"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        
+    </footer>
+</body>
+
+<!-- Javascript -->
+<script src="./main.js"></script>
+
+</html>
